@@ -11,7 +11,7 @@ function pesquisar() {
     let campoPesquisa = document.getElementById("campo-pesquisa").value
 
     //se o campo pesquisa for uma string sem nada
-    if(campoPesquisa == "") {
+    if(!campoPesquisa) {
         section.innerHTML = "<p>Nada foi encontrado. Você precisa digitar um modelo de carro</p>"
         return
     }
@@ -24,6 +24,7 @@ function pesquisar() {
     // Itera sobre cada objeto dentro do array de dados
     for (let dado of dados) {
       // Cria uma nova div para cada resultado, formatando-a com template literals
+      campoPesquisa = campoPesquisa.toLowerCase()
       titulo = dado.titulo.toLowerCase() 
       descricao = dado.descricao.toLowerCase()
       if (titulo.includes(campoPesquisa) || descricao.includes(campoPesquisa)) {
