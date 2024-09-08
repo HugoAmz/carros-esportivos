@@ -1,4 +1,4 @@
-### ** Busca de Carros Esportivos: Uma Aventura Digital!**
+### ** Busca de Carros Esportivos: Uma Aventura Digital! - Imersão Dev com Google Gemini**
 
 **O que faz essa aplicação?**
 
