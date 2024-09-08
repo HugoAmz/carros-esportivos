@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automóveis</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Carros Esportivos</h1>
+    </header>
+    <main>
+        <section>
+            <input type="text" placeholder="Digite o modelo do Veículo" id="campo-pesquisa">
+            <button onclick="pesquisar()">Pesquisar</button>
+        </section>   
+        <section class="resultados-pesquisa" id="resultados-pesquisa">
+            <!--
+            <div class="boxShow">
+                <img src="imagens/carros/porche.jfif" alt="">
+                <div class="item-resultado">
+                    <h2>
+                        <a href="https://www.porsche.com/brazil/pt/models/911/" target="_blank">Porche 911</a>
+                    </h2>
+                    <p class="descricao-meta">O Porsche 911 é mais do que apenas um carro, é um ícone. Produzido pela alemã Porsche desde 1964, este esportivo tem encantado entusiastas de automóveis ao redor do mundo com seu design atemporal, desempenho excepcional e tradição.</p>
+                    <a href="https://pt.wikipedia.org/wiki/Porsche_911" target="_blank">Mais informações</a>
+                </div>
+            </div>
+            <div class="boxShow">
+                <img src="imagens/carros/bmw-m3.jfif" alt="">
+                <div class="item-resultado">
+                    <h2>
+                        <a href="https://www.bmw.com.br/pt/all-models/m-series/m3-sedan/2020/bmw-serie-3-berlina-versao-m-visao-geral.html" target="_blank">BMW M3</a>
+                    </h2>
+                    <p class="descricao-meta">O BMW M3 é um sedan esportivo de alto desempenho, conhecido por sua agilidade e motor potente. Com um design elegante e esportivo, o M3 oferece uma experiência de condução emocionante.</p>
+                    <a href="https://pt.wikipedia.org/wiki/BMW_M3" target="_blank">Mais informações</a>
+                </div>
+            </div>
+            <div class="boxShow">
+                <img src="imagens/carros/mcLarem-720s.jfif" alt="">
+                <div class="item-resultado">
+                    <h2>
+                        <a href="https://cars.mclaren.com/br-pt/super-series/720s" target="_blank">McLaren 720S</a>
+                    </h2>
+                    <p class="descricao-meta">O McLaren 720S é um supercarro britânico, famoso por sua aceleração impressionante e design futurista. Com um motor V8 biturbo, o 720S oferece uma experiência de condução extrema.</p>
+                    <a href="https://en.wikipedia.org/wiki/McLaren_720S" target="_blank">Mais informações</a>
+                </div>
+            </div>
+            <div class="boxShow">
+                <img src="imagens/carros/lamborghini-hurácian.jfif" alt="">
+                <div class="item-resultado">
+                    <h2>
+                        <a href="https://www.lamborghini.com/en-en/models/huracan" target="_blank">Lamborghini Huracán</a>
+                    </h2>
+                    <p class="descricao-meta">O Lamborghini Huracán é um supercarro italiano, conhecido por seu design agressivo e motor V10 naturalmente aspirado. Com tração integral e aerodinâmica avançada, o Huracán oferece uma experiência de condução emocionante e esportiva.</p>
+                    <a href="https://pt.wikipedia.org/wiki/Lamborghini_Huracán" target="_blank">Mais informações</a>
+                </div>
+            </div>
+            <div class="boxShow">
+                <img src="imagens/carros/ferrari488-gtb.jfif" alt="">
+                <div class="item-resultado">
+                    <h2>
+                        <a href="https://www.ferrari.com/en-EN/auto/ferrari-488-gtb" target="_blank">Ferrari 488 GTB</a>
+                    </h2>
+                        <p class="descricao-meta">O Ferrari 488 GTB é um supercarro italiano, famoso por seu motor V8 biturbo e design elegante. Com um chassi leve e aerodinâmica aprimorada, o 488 GTB oferece um desempenho excepcional em pista e na estrada.</p>
+                        <a href="https://pt.wikipedia.org/wiki/Ferrari_488_GTB" target="_blank">Mais informações</a>
+                    </div>
+            </div>
+            <div class="boxShow">
+                <img src="imagens/carros/audi-r8.jfif" alt="">
+                <div class="item-resultado">
+                    <h2>
+                        <a href="https://www.audi.com.br/br/web/pt/models/r8/r8-coupe-v10-performance-quattro.html" target="_blank">Audi R8</a>
+                    </h2>
+                    <p class="descricao-meta">O Audi R8 é um supercarro alemão, conhecido por sua combinação de desempenho e luxo. Com um motor V10 e tração integral quattro, o R8 oferece uma experiência de condução emocionante e segura.</p>
+                    <a href="https://pt.wikipedia.org/wiki/Audi_R8" target="_blank">Mais informações</a>
+                </div>
+            </div>
+            <div class="boxShow">
+                <img src="imagens/carros/nissan-Gt-r.jfif" alt="">
+                <div class="item-resultado">
+                    <h2>
+                        <a href="https://www.nissan.com.br/experiencia-nissan/gt-r.html" target="_blank">Nissan GT-R</a>
+                    </h2>
+                    <p class="descricao-meta">O Nissan GT-R é um supercarro japonês, conhecido por sua tecnologia avançada e desempenho excepcional. Com um motor V6 biturbo e sistema de tração integral ATTESA E-TS, o GT-R oferece uma experiência de condução emocionante e precisa.</p>
+                    <a href="https://pt.wikipedia.org/wiki/Nissan_GT-R" target="_blank">Mais informações</a>
+                </div>
+            </div>
+            <div class="boxShow">
+                <img src="imagens/carros/fordMustang-Gt.jfif" alt="">
+                <div class="item-resultado">
+                    <h2>
+                        <a href="https://www.ford.com.br/performance/mustang/" target="_blank">Ford Mustang GT</a>
+                    </h2>
+                    <p class="descricao-meta">O Ford Mustang GT é um muscle car americano icônico, conhecido por seu design clássico e motor V8 potente. Com uma história rica e uma legião de fãs, o Mustang GT oferece uma experiência de condução emocionante e nostálgica.</p>
+                    <a href="https://pt.wikipedia.org/wiki/Ford_Mustang" target="_blank">Mais informações</a>
+                </div>
+            </div>
+            <div class="boxShow">
+                <img src="imagens/carros/chevroletCorvette.jfif" alt="">
+                <div class="item-resultado">
+                    <h2>
+                        <a href="https://www.chevrolet.com/performance/corvette" target="_blank">Chevrolet Corvette</a>
+                    </h2>
+                    <p class="descricao-meta">O Chevrolet Corvette é um sports car americano, conhecido por seu design esportivo e motor V8 potente. Com uma longa história de inovação e desempenho, o Corvette oferece uma experiência de condução emocionante e americana.</p>
+                    <a href="https://pt.wikipedia.org/wiki/Chevrolet_Corvette" target="_blank">Mais informações</a>
+                </div>
+            </div>
+            <div class="boxShow">
+                <img src="imagens/carros/dodgeChallengerHellCat.avif" alt="">
+                <div class="item-resultado">
+                    <h2>
+                        <a href="https://www.dodge.com/challenger/srt.html" target="_blank">Dodge Challenger Hellcat</a>
+                    </h2>
+                    <p class="descricao-meta">O Dodge Challenger Hellcat é um muscle car americano que se destaca por sua potência bruta e design clássico. Equipado com um motor V8 supercarregado de 6.2 litros, capaz de gerar mais de 700 cavalos de potência, o Hellcat é um dos carros de produção mais potentes do mundo.</p>
+                    <a href="https://pt.wikipedia.org/wiki/Dodge_Challenger" target="_blank">Mais informações</a>
+                </div>
+            </div>
+            -->
+        </section>
+    </main>
+    <footer>
+        <p>2024 - Carros Esportivos. Todos os direitos reservados</p>
+        <p>Entre em contato pelo email: hugozubs@gma</p>
+    </footer>
+    <script src="dados.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
