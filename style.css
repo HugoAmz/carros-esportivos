@@ -105,6 +105,8 @@ section button:hover {
     height: 150px;
     border-radius: 50%;
 }
+
+
 /* Estiliza a descrição meta dentro dos itens de resultado */
 .descricao-meta {
     color: #45474B; /* Cor do texto */
@@ -164,6 +166,22 @@ footer {
     .resultados-pesquisa {
         width: 90%; /* Largura da caixa de resultados em telas pequenas */
         height: 50vh; /* Altura da caixa de resultados em telas pequenas */
+    }
+
+    .boxShow {
+        display: table-column;
+
+    }
+
+    .boxShow img {
+        image-resolution: 100px;
+        margin: 0%;
+        padding: 0%;
+        border-radius: 10% 10%;
+        height: auto;
+        width: 100%;
+    
+        
     }
 
     .item-resultado h2 {
