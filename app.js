@@ -52,4 +52,34 @@ function pesquisar() {
     section.innerHTML = resultados;
   }
 
+function listar() {
+    let section = document.getElementById("resultados-pesquisa");
+    let campoPesquisa = document.getElementById("campo-pesquisa").value
+  
+    let resultados = "";
+    let titulo = "";
+    let descricao = "";
+  
+    // Itera sobre cada objeto dentro do array de dados
+    for (let dado of dados) {
+      // Cria uma nova div para cada resultado, formatando-a com template literals
+      campoPesquisa = campoPesquisa.toLowerCase()
+      titulo = dado.titulo.toLowerCase() 
+      descricao = dado.descricao.toLowerCase()
+        resultados += `
+        <div class="boxShow">
+          <img src="${dado.imagem}" alt="">
+          <div class="resultado-pesquisa">
+            <h2>
+              <a href="${dado.linkTitulo}" target="_blank">${dado.titulo}</a>
+            </h2>
+            <p class="descricao-meta">${dado.descricao}</p>
+            <a href="${dado.link}" target="_blank">Mais informações</a>
+          </div>
+        </div>
+      `;
+    }
+
+    section.innerHTML = resultados;
+}
 
