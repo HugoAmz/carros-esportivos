@@ -20,6 +20,8 @@ h1 {
     color: #330066; /* Cor do texto */
     text-align: center; /* Alinha o texto ao centro */
     letter-spacing: 0.4rem; /* Espaçamento entre letras */
+    background-color: white;
+    border-radius: 1rem;
 }
 
 /* Estiliza as seções da página */
