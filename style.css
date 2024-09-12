@@ -4,7 +4,19 @@
 /* Estiliza o corpo da página */
 body {
     font-family: "Chakra Petch", sans-serif; /* Define a fonte padrão */
-    background-color: #DDDDDD; /* Cor de fundo da página */
+    background-image: url(imagens/fundo/carroBr.jpeg); /* Cor de fundo da página */
+    background-repeat: no-repeat;
+    background-size: 100%;
+    bottom: 0;
+    color: black;
+    left: 0;
+    overflow: auto;
+    padding: 3em;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    background-size: cover;
     display: flex; /* Usa Flexbox para layout */
     flex-direction: column; /* Alinha os itens na vertical */
     align-items: center; /* Centraliza os itens horizontalmente */
@@ -16,12 +28,10 @@ body {
 
 /* Estiliza os títulos h1 */
 h1 {
-    font-size: 2.5rem; /* Tamanho da fonte */
-    color: #330066; /* Cor do texto */
+    font-size: 4rem; /* Tamanho da fonte */
+    color: #000000; /* Cor do texto */
     text-align: center; /* Alinha o texto ao centro */
     letter-spacing: 0.4rem; /* Espaçamento entre letras */
-    background-color: white;
-    border-radius: 1rem;
 }
 
 /* Estiliza as seções da página */
@@ -45,15 +55,12 @@ section input {
 }
 
 /* Estiliza os botões dentro das seções */
-section button {
-    padding: 0.8rem 1.2rem; /* Espaçamento interno do botão */
-    border: none; /* Remove a borda padrão */
-    border-radius: 1.5rem; /* Borda arredondada */
-    background-color: #6a23ad; /* Cor de fundo do botão */
-    color: #F5F7F8; /* Cor do texto do botão */
-    font-size: 1rem; /* Tamanho da fonte */
-    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+
+.buttonsTop {
+    display: flex;
+    gap: 25px;
 }
+
 
 /* Adiciona efeito hover ao botão de pesquisa */
 section button:hover {
@@ -106,6 +113,7 @@ section button:hover {
     width: 160px;
     height: 150px;
     border-radius: 50%;
+    
 }
 
 
@@ -122,7 +130,7 @@ footer {
     text-align: center; /* Alinha o texto ao centro */
     padding: 0; /* Espaçamento interno */
     width: 100%; /* Largura total da página */
-    position: absolute; /* Posiciona o rodapé */
+    position: fixed; /* Posiciona o rodapé */
     bottom: 0; /* Alinha ao fundo da página */
     font-size: 1rem; /* Tamanho da fonte */
 }
@@ -182,8 +190,6 @@ footer {
         border-radius: 10% 10%;
         height: auto;
         width: 100%;
-    
-        
     }
 
     .item-resultado h2 {
